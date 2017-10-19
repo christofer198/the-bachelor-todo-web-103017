@@ -13,8 +13,10 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+  count = 0
   data.each do |season, contestant|
-    return contestant
+    data[season][count]["occupation"]
+    count+=1
   end
 end
 
