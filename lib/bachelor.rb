@@ -15,11 +15,7 @@ def get_contestant_name(data, occupation)
   # code here
   count = 0
   data.each do |season, contestant|
-    if data[season][count]["occupation"] == occupation
-      return data[season][count]["name"]
-      break
-    end
-    count += 1
+    return season
   end
 end
 
