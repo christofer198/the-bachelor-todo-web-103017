@@ -26,7 +26,7 @@ end
 def count_contestants_by_hometown(data, hometown)
   # code here
   data.each do |season,contestant|
-    data.contestant do |key|
+    contestant.each do |key|
       return key
     end
   end
