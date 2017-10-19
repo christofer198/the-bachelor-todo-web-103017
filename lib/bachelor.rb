@@ -18,7 +18,7 @@ def get_contestant_name(data, occupation)
     if data[season][count]["occupation"] == occupation
       return "h"
     else
-      return "h"
+      return occupation
     end
   end
 end
