@@ -51,7 +51,7 @@ def get_average_age_for_season(data, season)
   count = 0
   data[season].each do |key|
     age_array.push(key["age"])
-    count += key["age"]
+    count += key["age"].to_i
   end
   return count / age_array.length
 
