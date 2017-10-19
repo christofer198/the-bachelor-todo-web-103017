@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   count = 0
   until count == data[season].length
     if data[season][count]["status"] == "Winner"
-      return "ello"
+      winner_name = data[season][count]["name"].split
       break
     end
     count += 1
