@@ -13,8 +13,9 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  count = 0
+
   data.each do |season, contestant|
+    count = (0..data[season].length)
     if data[season][0..data[season].length]["occupation"] == occupation
       return "h"
     end
