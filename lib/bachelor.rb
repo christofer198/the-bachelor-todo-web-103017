@@ -17,6 +17,7 @@ def get_contestant_name(data, occupation)
   data.each do |season, contestant|
     data[season][count]["occupation"]
     count+=1
+    
   end
 end
 
