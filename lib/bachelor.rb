@@ -47,4 +47,10 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  age_array = []
+  data[season].each do |key|
+    age.array.push(key["age"])
+  end
+  return age_array
+    
 end
