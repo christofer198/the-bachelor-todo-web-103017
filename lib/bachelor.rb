@@ -1,12 +1,9 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  count = 0
-  until count == data[season].length
-    if data[season][count]["status"] == "Winner"
-      return winner_name = data[season][count]["name"].split[0]
-      break
+  data[season].each do |key|
+    if key["status"] == "Winner"
+      return key["name"].split[0]
     end
-    count += 1
   end
 
 end
