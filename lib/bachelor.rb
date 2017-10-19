@@ -52,5 +52,5 @@ def get_average_age_for_season(data, season)
     age.array.push(key["age"])
   end
   return age_array
-    
+
 end
